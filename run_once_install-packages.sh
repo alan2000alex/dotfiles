@@ -41,6 +41,17 @@ else
   rm -f nvim-linux-x86_64.tar.gz
 fi
 
+# lazyvim
+NVIM_DIR="$HOME/.config/nvim"
+NVIM_REPO="https://github.com/alan2000alex/lazy-nvim-config.git"
+if [ -d "$NVIM_DIR" ]; then
+  skip "lazyvim"
+else
+  log "setting up lazyvim"
+  mkdir -p "$HOME/.config"
+  git clone "$NVIM_REPO" "$NVIM_DIR"
+fi
+
 # ── tmux ──────────────────────────────────────────────────────────────────────
 
 if command_exists tmux; then
