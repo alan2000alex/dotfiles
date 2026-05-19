@@ -1,13 +1,6 @@
 # Dotfiles
 
-These are my system configurations, scripts, and preferences, managed seamlessly using [chezmoi](https://www.chezmoi.io/).
-
-You can bootstrap a new machine with a single command. This will install `chezmoi`, initialize the repository, and apply the configurations.
-
-```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply alan2000alex
-
-```
+These are my system configurations, scripts, and preferences, managed with [chezmoi](https://www.chezmoi.io/).
 
 ## Structure
 
